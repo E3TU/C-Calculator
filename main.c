@@ -6,12 +6,12 @@ int main() {
   char operator;
   stop = 0;
   while (stop == 0) {
-    printf("Enter the operator(+, -, *, /, q to quit): ");
-    scanf("%c", &operator);
+    printf("Enter the operator (+, -, *, /, q to quit): ");
+    scanf(" %c", &operator);
 
-    if (operator == 'q') {
-        stop = 1;
-        break;
+    if (operator== 'q') {
+      stop = 1;
+      break;
     }
 
     printf("Enter first number: ");
@@ -34,9 +34,8 @@ int main() {
       printf("Result: %d\n", num1 / num2);
       break;
     default:
-      printf("Error, you entered wrong operator");
+      printf("Error, you entered a wrong operator\n");
     }
-
-    return 0;
   }
+  return 0;
 }
